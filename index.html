@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@100;300;500&family=PT+Serif:ital@0;1&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
     <!-- 외부 css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- 외부 js -->
@@ -21,37 +22,46 @@
 
 <body>
     <div>
-        <!-- 홈 -->
-        <div class="section" id="visual_slide">
+        <!-- 메인 헤더 -->
+        <header id="main_header" id="main_visual">
+            <div class="header_box">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/sign.png" alt="logo">
+                    </a>
+                </h1>
 
-            <!-- 메인 헤더 -->
-            <header id="main_header" id="main_visual">
-                <div class="header_box">
-                    <h1>
-                        <a href="index.html">
-                            <img src="./images/sign.png" alt="logo">
-                        </a>
-                    </h1>
+                <nav id="gnb" class="stroke">
+                    <ul class="depth1">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <a href="#sub1_1">About me</a>
+                            <a href="#sub1_2">Portfolio</a>
+                            <a href="#sub1_3">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-                    <nav id="gnb" class="stroke">
-                        <ul class="depth1">
-                            <li>
-                                <a href="index.html">Home</a>
-                                <a href="#sub1_1">About me</a>
-                                <a href="#sub1_2">Portfolio</a>
-                                <a href="#sub1_3">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-            </header>
-
-            <!-- 메인 비주얼 -->
+        </header>
+        <!-- 메인 비주얼 -->
+        <div class="section" id="home">
             <div class="main_text">
-                <div class="main_text_box">
-                    <h1><span>Yes,</span> <br><br>I am UI/UX Designer</h1> <br>
-                    <h2>from Seoul, Korea</h2>
+                <div class="text-center">
+                    <div class="typing-txt">
+                        <ul>
+                            <li>Yes,</li>
+                            <li>I am UI/UX Designer</li>
+                            <li>from Seoul, Korea!</li>
+                        </ul>
+                    </div>
+                    <div class="typing">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,24 +216,24 @@
                                 <input type="radio" name="pos" id="pos6">
                                 <input type="radio" name="pos" id="pos7">
                                 <ul>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                                 <p class="bullet">
-                                  <label for="pos1">1</label>
-                                  <label for="pos2">2</label>
-                                  <label for="pos3">3</label>
-                                  <label for="pos4">4</label>
-                                  <label for="pos5">5</label>
-                                  <label for="pos6">6</label>
-                                  <label for="pos7">7</label>
+                                    <label for="pos1">1</label>
+                                    <label for="pos2">2</label>
+                                    <label for="pos3">3</label>
+                                    <label for="pos4">4</label>
+                                    <label for="pos5">5</label>
+                                    <label for="pos6">6</label>
+                                    <label for="pos7">7</label>
                                 </p>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="preview">
@@ -236,16 +246,16 @@
                                 <input type="radio" name="pos" id="pos9">
                                 <input type="radio" name="pos" id="pos10">
                                 <ul>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                                 <p class="bullet">
-                                  <label for="pos8">1</label>
-                                  <label for="pos9">2</label>
-                                  <label for="pos10">3</label>
+                                    <label for="pos8">1</label>
+                                    <label for="pos9">2</label>
+                                    <label for="pos10">3</label>
                                 </p>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="preview">
@@ -257,14 +267,14 @@
                                 <input type="radio" name="pos" id="pos11">
                                 <input type="radio" name="pos" id="pos12">
                                 <ul>
-                                  <li></li>
-                                  <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                                 <p class="bullet">
-                                  <label for="pos11">1</label>
-                                  <label for="pos12">2</label>
+                                    <label for="pos11">1</label>
+                                    <label for="pos12">2</label>
                                 </p>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="preview">
@@ -277,19 +287,81 @@
                                 <input type="radio" name="pos" id="pos14">
                                 <input type="radio" name="pos" id="pos15">
                                 <ul>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                                 <p class="bullet">
-                                  <label for="pos13">1</label>
-                                  <label for="pos14">2</label>
-                                  <label for="pos15">3</label>
+                                    <label for="pos13">1</label>
+                                    <label for="pos14">2</label>
+                                    <label for="pos15">3</label>
                                 </p>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="exit">닫기</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup1">
+            <div class="popmenu" id="menu_2st">
+                <div class="pop_scroll">
+                    <div class="popup_bg" id="pop_2st">
+                        <div class="menu_2st_bg">
+                            <img src="./images/pop2.png" alt="모바일 청첩장" width="820" height="628">
+                            <div class="popup_title">
+                                <h2>모바일 청첩장
+                                    <a href="https://jiopwls.github.io/wedding" target=‘_blank>
+                                        <p>https://jiopwls.github.io/wedding</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="popup_overview">
+                                <h3>OVERVIEW</h3>
+                                <p>프로젝트 과제중 하나인 모바일 청첩장이며, 모바일 표준에 맞춰 제작하였습니다.</p>
+                            </div>
+                            <div class="popup_about">
+                                <h3>ABOUT</h3>
+                                <p><span>작업기간</span>약 3일</p>
+                                <p><span>참여도</span>100%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="styleGuide">
+                        <h2>STYLE GUIDE</h2>
+                        <div class="style_box">
+                            <div class="style_color">
+                                <h3>Color</h3>
+                                <div class="color1">
+                                    <p>#000000</p>
+                                </div>
+                                <div class="color2">
+                                    <p>#FFFFFF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="style_box">
+                            <div class="style_font">
+                                <h3>Font</h3>
+                                <div class="font1">
+                                    <p class="regular">NanumGothic Regular</p>
+                                    <p><b>NanumGothic Bold</b></p>
+                                </div>
+                                <div class="font1">
+                                    <p class="regular">NanumMyeongjo Regular</p>
+                                    <p><b>NanumMyeongjo Bold</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview">
+                        <h2>Mobile Preview</h2>
+                        <div class="main_view">
+
+                        </div>
+                    </div>
+                    <div class="exit1">닫기</div>
                 </div>
             </div>
         </div>
@@ -308,17 +380,17 @@
                     </a>
                 </div>
                 <div>
-                    <a href="index.html"><img src="images/icon_facebook.png" alt="전화번호">
+                    <a href="index.html"><img src="images/icon_facebook.png" alt="페이스북">
                         <p>@jiopwls</p>
                     </a>
                 </div>
                 <div>
-                    <a href="index.html"><img src="images/icon_insta.png" alt="전화번호">
+                    <a href="index.html"><img src="images/icon_insta.png" alt="인스타그램">
                         <p>@t1ue</p>
                     </a>
                 </div>
                 <div>
-                    <a href="index.html"><img src="images/icon_e-mail.png" alt="전화번호">
+                    <a href="index.html"><img src="images/icon_e-mail.png" alt="이메일">
                         <p>jiopwls@naver.com</p>
                     </a>
                 </div>
@@ -345,24 +417,21 @@
             </div>
         </div>
         <!-- footer -->
-        <div class="section">
-            <footer>
-                <div id="footer_1400">
-                    <h1>
-                        <a href="index.html">
-                            <img src="./images/sign.png" alt="logo">
-                        </a>
-                    </h1>
-
-                    <div class="footer_info">
-                        <p>
-                            Copyright© 2020 Web Publisher 정원진.&nbsp;All rights reserved.
-                        </p>
-                        <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
-                    </div>
+        <footer>
+            <div id="footer">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/sign.png" alt="logo">
+                    </a>
+                </h1>
+                <div class="footer_info">
+                    <p>
+                        Copyright© 2020 Web Publisher 정원진.&nbsp;All rights reserved.</p>
+                    <p>
+                        본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
 

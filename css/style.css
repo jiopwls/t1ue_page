@@ -16,10 +16,10 @@ a {
 /*header*/
 #main_header {
   min-width: 1400px;
-  width: 100%; height: 150px;
+  width: 100%; height: 100px;
   position: relative;
   margin: 0 auto;
-  background: #ccc;
+  /* background-image: url(../images/canvas1.png); */
 }
 .header_box {
   width: 1400px;
@@ -32,11 +32,11 @@ a {
   transform: translateY(-50%);
 }
 #gnb {
-  /* outline: 2px solid red;/ */
+  outline: 1px solid red;
   font-size: 20px;
   position: absolute;
   top: 50px; left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   z-index: 9999;
 }
@@ -50,15 +50,70 @@ a {
 #gnb .depth1 > li {
   float: left;
   text-align: center;
-  /* outline: 1px solid red; */
+  /* font-size: 18px; */
+}
+#gnb .depth1 > li a{
+  outline: 1px solid blue;
+  margin-right: 50px;
+}
+#gnb .depth1 > li a:last-child{margin-right: 0;}
+
+/* main visual */
+#home{
+  width: 1920px;
+  height: 900px;
+  /* outline: 1px solid green; */
+  position: relative;
+  /* background: orange; */
+  background-image: url(../images/desk.jpg);
+  background-size: 100%;
+  /* background-position: top center; */
+  /* background-size: cover; */
 }
 .main_text{
   width: 100%;
-  margin: 0 auto;
+  position: relative;
+  /* outline: 1px solid blue; */
+  height: 700px;
 }
-.main_text_box {
-  width: 1400px;
-  outline: 1px solid purple;
+.text-center {
+  position: absolute;
+  width: 700px;
+  /* margin: 0 auto; */
+  /* outline: 1px solid red; */
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding-top: 160px;
+  padding-right: 55px;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  text-align: left;
+}
+.typing-txt {display: none;}
+.typing ul li.on{
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  font-family: 'Caveat', cursive;
+  /* width: 600px; */
+  /* outline: 1px solid purple; */
+  margin: 0 auto;
+  /* padding-left: 180px; */
+}
+.typing ul li:first-child,
+.typing ul li.on:first-child{font-size: 3.5em;}
+.typing ul li:nth-child(2),
+.typing ul li.on:nth-child(2){font-size: 5em;}
+.typing ul li:nth-child(3),
+.typing ul li.on:nth-child(3){font-size: 4.5em;}
+
+@keyframes cursor{
+  0%{border-right: 1px solid #fff;}
+  50%{border-right: 1px solid #000;}
+  100%{border-right: 1px solid #fff;}
 }
 
 /*about me*/
@@ -94,7 +149,7 @@ a {
   outline: 1px solid blue;
   margin-top: 100px;
   float: left;
-  width: 650px;
+  width: 660px;
 }
 .history h3{
   float: left;
@@ -138,9 +193,7 @@ span.center{
   font-size:30px;
    transform: translate(-50%, -50%);
 }
-.skill div{
-  float: left;
-}
+.skill div{float: left;}
 /*portfolio*/
 #sub1_2 {
   width: 1400px;
@@ -174,8 +227,10 @@ span.center{
   background: #555;
   cursor: pointer;
 }
+#contents2 {cursor: pointer;}
 /*팝업창*/
-.popup {
+.popup,
+.popup1 {
   display: none;
   outline: 1px solid blue;
   position: fixed;
@@ -208,7 +263,8 @@ span.center{
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.exit {
+.exit,
+.exit1 {
   position: absolute;
   right: 30px;
   top: 30px;
@@ -219,7 +275,8 @@ span.center{
   background: #007AAE;
   cursor: pointer;
 }
-#menu_1st {
+#menu_1st,
+#menu_2st {
   position: absolute;
   width: 1400px;
 }
@@ -522,15 +579,60 @@ font-size: 30px;
 #pos13:checked ~ .bullet label:nth-child(1),
 #pos14:checked ~ .bullet label:nth-child(2),
 #pos15:checked ~ .bullet label:nth-child(3){background:#666;}
+
 #sub1_3{
   width: 1400px;
   outline: 1px solid green;
   clear: both;
+  position: relative;
 }
 #sub1_3 h2{text-align: center;}
+.icon_box{
+  width: 1150px;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px solid blue;
+}
 .icon_box div{
   float: left;
   outline: 1px solid red;
+  height: 50px;
+  width: 200px;
+  margin-right: 30px;
 }
-.icon_box div a img{width: 60px; height: 60px;}
-.icon_box div a p {float: left;}
+.icon_box div a img{width: 60px; height: 60px;
+float: left;
+}
+.icon_box div a p {
+  float: left;
+  line-height: 50px;
+}
+#lv-container{margin-top: 100px;}
+
+/* footer */
+footer{
+  width: 100%;
+  background: #ccc;
+}
+#footer{
+  width: 1400px; height: 100px;
+  outline: 1px solid red;
+  position: relative;
+}
+#footer h1 {
+  position: absolute;
+  outline: 1px solid blue;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+.footer_info{
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
