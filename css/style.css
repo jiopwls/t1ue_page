@@ -12,7 +12,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-
+.brush{position: absolute;}
 /*header*/
 #main_header {
   min-width: 1400px;
@@ -61,13 +61,13 @@ a {
 /* main visual */
 #home{
   width: 1920px;
-  height: 900px;
-  /* outline: 1px solid green; */
+  height: 800px;
+  outline: 1px solid green;
   position: relative;
   /* background: orange; */
   background-image: url(../images/desk.jpg);
   background-size: 100%;
-  /* background-position: top center; */
+  background-position: center center;
   /* background-size: cover; */
 }
 .main_text{
@@ -83,9 +83,8 @@ a {
   /* outline: 1px solid red; */
   height: 300px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  padding-top: 160px;
+  transform: translateX(-50%);
+  padding-top: 120px;
   padding-right: 55px;
   font-family: 'Caveat', cursive;
   font-weight: bold;
@@ -103,6 +102,11 @@ a {
   margin: 0 auto;
   /* padding-left: 180px; */
 }
+.typing img{
+  position: absolute;
+  top: 290px; left: 140px;
+}
+
 .typing ul li:first-child,
 .typing ul li.on:first-child{font-size: 3.5em;}
 .typing ul li:nth-child(2),
@@ -115,18 +119,27 @@ a {
   50%{border-right: 1px solid #000;}
   100%{border-right: 1px solid #fff;}
 }
-
 /*about me*/
 #sub1_1 {
   width: 1400px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   position: relative;
 }
 #sub1_1 .text_box{
   text-align: center;
   font-size: 30px;
   margin-bottom: 150px;
+  margin-top: 50px;
+}
+#sub1_1 .text_box img{
+  left: 560px;
+  top: 30px;
+  width: 280px;
+}
+#sub1_1 .text_box h2{
+  /* outline: 1px solid red; */
+  width: 300px;
 }
 .myPic img{
   float: left;
