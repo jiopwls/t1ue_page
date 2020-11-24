@@ -84,9 +84,9 @@ function typing(){
 
 // 원형 그래프
 $(window).ready(function(){
-  draw(80, '.pie-chart1', '#ccc');
- draw(75, '.pie-chart2', '#8b22ff');
- draw(40, '.pie-chart3','#ff0');
+  draw(80, '.pie-chart1', ' rgb(140, 140, 206)');
+ draw(70, '.pie-chart2', ' rgb(152, 152, 209)');
+ draw(50, '.pie-chart3','#bdbaea');
 });
 
 function draw(max, classname, colorname){
@@ -109,8 +109,8 @@ function color1(i, classname,colorname){
 
 function replay(){
  draw(80, '.pie-chart1', '#ccc');
- draw(75, '.pie-chart2', '#8b22ff');
- draw(40, '.pie-chart3','#ff0');
+ draw(70, '.pie-chart2', '#8b22ff');
+ draw(50, '.pie-chart3','#ff0');
 }
 
 $(document).ready(function(){
