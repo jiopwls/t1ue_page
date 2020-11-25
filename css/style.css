@@ -15,6 +15,14 @@ a {
 .hide{display: none;}
 .show{display: block!important;}
 /*header*/
+#header-fix{width: 100%;
+  position: fixed;
+  background: #fff;
+  height: 100px;
+  z-index: 999999;
+  outline: 1px solid red;
+  margin-top: -100px;
+}
 #main_header {
   min-width: 1400px;
   width: 100%; height: 100px;
@@ -61,12 +69,13 @@ a {
 
 /* main visual */
 #home{
+  margin-top: 100px;
   width: 1900px;
   height: 800px;
   outline: 1px solid green;
   position: relative;
   /* background: orange; */
-  background-image: url(../images/desk.jpg);
+  background-image: url(../images/desk1.jpg);
   background-size: 100%;
   background-position: center center;
   /* background-size: cover; */
@@ -82,7 +91,7 @@ a {
   width: 700px;
   /* margin: 0 auto; */
   /* outline: 1px solid red; */
-  height: 300px;
+  height: 600px;
   left: 50%;
   transform: translateX(-50%);
   padding-top: 120px;
@@ -92,45 +101,16 @@ a {
   text-align: left;
 }
 .typing-txt {
-  /* display: none; */
-  outline: 1px solid red;
-  color: #000;
-}
-.typing-txt p{color: #000;}
-.typing ul li.on{
-  display: inline-block;
-  animation-name: cursor;
-  animation-duration: 0.3s;
-  animation-iteration-count: infinite;
-  font-family: 'Caveat', cursive;
-  /* width: 600px; */
-  /* outline: 1px solid purple; */
-  margin: 0 auto;
-  /* padding-left: 180px; */
-}
-.typing img{
-  position: absolute;
-  top: 290px; left: 140px;
-}
-
-.typing ul li:first-child,
-.typing ul li.on:first-child{font-size: 3.5em;}
-.typing ul li:nth-child(2),
-.typing ul li.on:nth-child(2){font-size: 5em;}
-.typing ul li:nth-child(3),
-.typing ul li.on:nth-child(3){font-size: 4.5em;}
-
-@keyframes cursor{
-  0%{border-right: 1px solid #fff;}
-  50%{border-right: 1px solid #000;}
-  100%{border-right: 1px solid #fff;}
+  /* outline: 1px solid red; */
+  margin-top: 47px;
+  margin-left: 15px;
 }
 /* 다른 타이핑 효과 */
 p.result1,
 p.result2,
 p.result3{
   display: inline-block;
-  /* font-size:30px; */
+  font-size:40px;
   height:24px;
   line-height: 24px;
   border-right: 1px solid #fff;
@@ -139,6 +119,7 @@ p.result3{
   padding:0;
   margin:5px;
   color: #000;
+  margin-bottom: 45px;
 }
 
 p.cursor1 {animation: cursor2 0.4s infinite;}
@@ -293,6 +274,8 @@ span.center{
   width: 400px; height: 400px;
   background-size: cover;
   background-position: center center;
+  cursor: pointer;
+  outline: 1px solid red;
 }
 .pf-align{
   width: 1400px;
@@ -303,17 +286,35 @@ span.center{
   margin-left: 200px;
   margin-right: 100px;
 }
+.pf_box1 p{
+  position: absolute;
+  top: 610px;
+  left: 300px;
+  outline: 1px solid red;
+  color: #000;
+  /* color: #fff; */
+  /* background: #555; */
+}
+
 .pf_box2 {
   background-image: url(../images/phone_port1.png);
 }
-
-#contents1 {
+.pf_box2 p{
+  position: absolute;
+  top: 610px;
+  left: 933px;
+  outline: 1px solid red;
+  color: #000;
   /* color: #fff; */
   /* background: #555; */
-  cursor: pointer;
 }
+.pf_box3 {
+  margin-top: 200px;
+  margin-left: 500px;
+  font-size: 35px;
+}
+
 #contents2 {
-  cursor: pointer;
   color: #fff;
 }
 /*팝업창*/
@@ -658,28 +659,31 @@ font-size: 30px;
 #pos4:checked ~ .bullet label:nth-child(4),
 #pos5:checked ~ .bullet label:nth-child(5),
 #pos6:checked ~ .bullet label:nth-child(6),
-#pos7:checked ~ .bullet label:nth-child(7){background:#666;}
+#pos7:checked ~ .bullet label:nth-child(7),
 #pos8:checked ~ .bullet label:nth-child(1),
 #pos9:checked ~ .bullet label:nth-child(2),
-#pos10:checked ~ .bullet label:nth-child(3){background:#666;}
+#pos10:checked ~ .bullet label:nth-child(3),
 #pos11:checked ~ .bullet label:nth-child(1),
-#pos12:checked ~ .bullet label:nth-child(2){background:#666;}
+#pos12:checked ~ .bullet label:nth-child(2),
 #pos13:checked ~ .bullet label:nth-child(1),
 #pos14:checked ~ .bullet label:nth-child(2),
 #pos15:checked ~ .bullet label:nth-child(3){background:#666;}
 
 .sub1_3bg{
   background-image: url(../images/aaaaaa.jpg);
+  background-size: cover;
   width: 100%;
   position: relative;
+  outline: 1px solid red;
+  margin-top: 215px;
 }
 #sub1_3{
   width: 1400px;
   outline: 1px solid green;
   clear: both;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 10px;
   /* color: #fff; */
 }
 #sub1_3 .text_box{
@@ -727,13 +731,15 @@ margin-top: 4px;
   padding-top: 0px;
 }
 #container{padding-top: 0;}
+.livere-com::after{color:#fff!important}
 /* footer */
 footer{
   width: 100%;
-  background: #ccc;
+  /* background: #000; */
+  /* color: #fff; */
 }
 #footer{
-  width: 1400px; height: 150px;
+  width: 1400px; height: 100px;
   /* outline: 1px solid red; */
   position: relative;
 }
