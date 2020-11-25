@@ -107,11 +107,11 @@ var inter3;
 
 function typi(){
   //글자수만큼 반복후 종료
-  $('.result1').addClass('cursor1');
+  $('.result1').addClass("cursor1");
   if(i<=imax1-1){
       //각 글자가 초성 중성 종성 순서대로 추가되도록 
       var jmax1 = typeing1[i].length;
-      $('.result1').innerText = text + typeing1[i][j];
+      $('.result1').text(text + typeing1[i][j]);
       j++;
       if(j==jmax1){
           text+=  typeing1[i][j-1];//초성중성종성 순서대로 출력된 글자는 저장 ( 다음 글자와 이어붙이기 위해서 )
@@ -141,7 +141,7 @@ function typi2(){
   if(i<=imax2-1){
       //각 글자가 초성 중성 종성 순서대로 추가되도록 
       var jmax2 = typeing2[i].length;
-      $('.result2').innerText = text + typeing2[i][j];
+      $('.result2').text(text + typeing2[i][j]);
       j++;
       if(j==jmax2){
           text+=  typeing2[i][j-1];//초성중성종성 순서대로 출력된 글자는 저장 ( 다음 글자와 이어붙이기 위해서 )
@@ -171,7 +171,7 @@ function typi3(){
   if(i<=imax3-1){
       //각 글자가 초성 중성 종성 순서대로 추가되도록 
       var jmax3 = typeing3[i].length;
-      $('.result3').innerText = text + typeing3[i][j];
+      $('.result3').text(text + typeing3[i][j]);
       j++;
       if(j==jmax3){
           text+=  typeing3[i][j-1];//초성중성종성 순서대로 출력된 글자는 저장 ( 다음 글자와 이어붙이기 위해서 )
