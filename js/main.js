@@ -65,7 +65,7 @@ String.prototype.toKorChars = function() {
 //타이핑할 문장
 var result1 = "안녕하세요!";
 var result2 = "웹 퍼블리셔라는 꿈을 코딩중인";
-var result3 = "정원진입니다.";
+var result3 = "정원진입니다! :)";
 var typeing1=[],
     typeing2=[],
     typeing3=[];
@@ -100,7 +100,7 @@ var imax2 = typeing2.length;
 var imax3 = typeing3.length;
 
 //setInterval을 이용해 반복적으로 출력 
-var inter = setInterval(typi,150);
+var inter = setInterval(typi,100);
 var inter2;
 var inter3;
 
@@ -128,7 +128,7 @@ function typi(){
     setTimeout(function(){             
       $('.result2').addClass("cursor1");
        setTimeout(function(){
-          inter2 = setInterval(typi2,150);
+          inter2 = setInterval(typi2,100);
        },400);
      },300);
    },400);
@@ -150,6 +150,7 @@ function typi2(){
       }
   } else{
     clearInterval(inter);
+    clearInterval(inter2);
      text ="";
     i=0;
     j=0; 
@@ -158,7 +159,7 @@ setTimeout(function(){
   setTimeout(function(){             
     $('.result3').addClass("cursor1");
      setTimeout(function(){
-        inter3 = setInterval(typi3,150);
+        inter3 = setInterval(typi3,100);
      },400);
    },300);
  },400);
@@ -179,7 +180,8 @@ function typi3(){
           j=0;
       }
   } else{
-      clearInterval(inter);
+      clearInterval(inter2);
+      clearInterval(inter3);
   }
 }
 
