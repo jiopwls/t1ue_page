@@ -718,12 +718,13 @@ font-size: 30px;
 #pos15:checked ~ .bullet label:nth-child(3){background:#666;}
 
 .sub1_3bg{
-  background-image: url(../images/aaaaaa.jpg);
+  background-image: url(../images/footer-bg1.png);
   background-size: cover;
+  background-position: bottom center;
   width: 100%;
   position: relative;
   margin-top: 50px;
-  z-index: -10;
+  /* z-index: -10; */
   /* outline: 1px solid red; */
   /* padding-top: 150px; */
   /* margin-top: 305px; */
@@ -736,6 +737,7 @@ font-size: 30px;
   /* padding-top: 40px; */
   padding-bottom: 10px;
   /* color: #fff; */
+  height: 868px;
 }
 #sub1_3 .text_box{
   text-align: center;
@@ -756,11 +758,11 @@ font-size: 30px;
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 .icon_box div{
   float: left;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   height: 50px;
   width: 220px;
   margin-right: 30px;
@@ -781,7 +783,6 @@ margin-top: 4px;
   background: #ffffff;
   height: 500px;
   padding-top: 0px;
-  /* z-index: 99999999; */
 }
 #container{padding-top: 0;}
 .livere-com::after{color:#fff!important}
@@ -799,8 +800,11 @@ footer{
 #footer h1 {
   position: absolute;
   /* outline: 1px solid blue; */
-  top: 50%;
-  transform: translateY(-50%);
+  /* top: 50%;
+  transform: translateY(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -50px;
   margin-left: 30px;
 }
 .footer_info{
@@ -810,4 +814,5 @@ footer{
   vertical-align: middle;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
+  /* outline: 1px solid blue; */
 }
