@@ -737,6 +737,14 @@ font-size: 30px;
   padding-left: 30px;
   margin-top: -25px;
 }
+.now_site {
+  font-size: 14px!important;
+  top: 70px; left: 140px;
+  position: absolute;
+  font-weight: normal;
+  color: #2e2e2e;
+}
+.now_site span{font-size: 12px;}
 .main_view > .slide{float: right;}
 .slide{
   width: 849px;
