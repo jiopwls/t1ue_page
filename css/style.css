@@ -155,7 +155,7 @@ a {
   /* outline: 1px solid red; */
   margin-top: 100px;
   margin-left: 35px;
-  width: 630px;
+  width: 630px!important;
   /* margin: 0 auto; */
 }
 /* 다른 타이핑 효과 */
