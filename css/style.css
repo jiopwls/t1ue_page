@@ -18,7 +18,7 @@ a {
 /*header*/
 #header-fix{width: 100%;
   position: fixed;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
   height: 100px;
   z-index: 999999;
   /* margin-top: -100px; */
@@ -155,7 +155,7 @@ a {
   /* outline: 1px solid red; */
   margin-top: 100px;
   margin-left: 35px;
-  width: 520px;
+  width: 630px;
   /* margin: 0 auto; */
 }
 /* 다른 타이핑 효과 */
