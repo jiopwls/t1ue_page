@@ -7,6 +7,7 @@
     <meta property="og:image" content="./images/myPic.png">
     <meta property="og:description" content="안녕하세요!:) 웹 퍼블리셔 정원진입니다.">
     <title>T1ue's Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- 구글 웹 폰트 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -16,6 +17,7 @@
     <!-- 외부 css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- 외부 js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
@@ -33,14 +35,12 @@
                     </h1>
 
                     <nav id="gnb" class="stroke">
-                        <ul class="depth1">
-                            <li>
-                                <a href="index.html">Home</a>
-                                <a href="#sub1_1">About me</a>
-                                <a href="#sub1_2">Portfolio</a>
-                                <a href="#sub1_3">Contact</a>
-                            </li>
-                        </ul>
+                        <div class="depth1 brackets">
+                            <a href="#home" class="active">&nbsp;Home&nbsp;</a>
+                            <a href="#sub1_1">&nbsp;About me&nbsp;</a>
+                            <a href="#sub1_2">&nbsp;Portfolio&nbsp;</a>
+                            <a href="#sub1_3">&nbsp;Contact&nbsp;</a>
+                        </div>
                     </nav>
                 </div>
 
@@ -48,7 +48,8 @@
         </div>
         <!-- 메인 비주얼 -->
         <div class="section" id="home">
-            <div class="main_text">
+            <img src="./images/desk2.jpg" alt="">
+
                 <div class="text-center">
                     <div class="typing-txt">
                         <p class="result1"></p>
@@ -58,7 +59,7 @@
                         <p class="result3"></p>
                     </div>
                 </div>
-            </div>
+
         </div>
 
         <!-- About -->
@@ -68,22 +69,22 @@
                 <img src="./images/brush1.png" alt="" class="brush">
             </div>
             <div class="products_box">
-                <div class="myPic">
+                <div class="myPic" data-aos="zoom-out-up" data-aos-duration="1500">
                     <img src="./images/myPic1.png" alt="내 사진">
                 </div>
-                <section class="profile">
+                <section class="profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-sine">
                     <h3>Profile</h3>
                     <p>정원진 <br>
                         Jeong Won Jin <br>
                         1993.02.16</p>
                 </section>
-                <section class="history">
+                <section class="history" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-easing="ease-in-sine">
                     <h3>History</h3>
                     <p>2011.03 ~ 2013.02 서울현대전문학교 세무회계학과 전공 <br>
                         2013.09 ~ 2019.01 육군 26사단, 8사단 부사관 <br>
                         2020.06 ~ 2020.11 더조은아카데미 'UI/UX 엔지니어링'과정 수료</p>
                 </section>
-                <section class="skill">
+                <section class="skill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-sine">
                     <h3>Skill</h3>
                     <div class="skill_box">
                         <div>
@@ -119,18 +120,21 @@
             </div>
             <div class="pf-align">
                 <div id="contents1" class="pf_box1">
-                    <p>대신자산운용 홈페이지 리뉴얼</p>
+                    <img src="./images/port1.jpg" alt="대신자산운용 포트폴리오" class="image-card">
+                    <p>대신자산운용 <br>홈페이지 리뉴얼 포트폴리오</p>
                 </div>
                 <div id="contents2" class="pf_box2">
+                    <img src="./images/phone_port.jpg" alt="모바일 청첩장 포트폴리오" class="image-card">
                     <p>모바일 청첩장</p>
                 </div>
                 <div id="contents3" class="pf_box3">
-                    <p>계속 추가할 예정입니다..! </p>
+                    <span>포트폴리오는<br>계속 추가할 예정입니다..!</span>
+                    <img src="./images/brush1.png" alt="브러쉬">
                 </div>
             </div>
         </div>
         <!--팝업 내용-->
-        <div class="popup">
+        <div class="popup1">
             <div class="popmenu" id="menu_1st">
                 <div class="pop_scroll">
                     <div class="popup_bg" id="pop_1st">
@@ -211,7 +215,8 @@
                             <div id="ms_text">
                                 <h3>Main Page</h3>
                                 <p>
-                                    홈, 대표상품, 회사소개 등 총 6개의 콘텐츠로 구성된 풀 페이지 형식의 메인 페이지와 회사개요, 오시는 길, 대표상품 등 총 3개의 서브 페이지를 제작하였으며,<br>각각의 콘텐츠마다 해당 콘텐츠에 맞는 정보가 한 눈에 들어오도록 하였습니다.
+                                    홈, 대표상품, 회사소개 등 총 6개의 콘텐츠로 구성된 풀 페이지 형식의 메인 페이지와 회사개요, 오시는 길, 대표상품 등 총 3개의 서브 페이지를
+                                    제작하였으며,<br>각각의 콘텐츠마다 해당 콘텐츠에 맞는 정보가 한 눈에 들어오도록 하였습니다.
                                 </p>
                             </div>
                             <div class="slide">
@@ -306,20 +311,20 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="exit">닫기</div>
+                    <div class="exit1">닫기</div>
                 </div>
             </div>
         </div>
-        <div class="popup1">
+        <div class="popup2">
             <div class="popmenu" id="menu_2st">
                 <div class="pop_scroll">
                     <div class="popup_bg" id="pop_2st">
                         <div class="menu_2st_bg">
-                            <img src="./images/pop2.png" alt="모바일 청첩장" width="820" height="628">
+                            <img src="./images/phone.png" alt="모바일 청첩장" width="820" height="628">
                             <div class="popup_title">
                                 <h2>모바일 청첩장
-                                    <a href="https://jiopwls.github.io/wedding" target=‘_blank>
-                                        <p>https://jiopwls.github.io/wedding</p>
+                                    <a href="https://jiopwls.github.io/invitation_preview/" target=‘_blank>
+                                        <p>https://jiopwls.github.io/invitation_preview/</p>
                                     </a>
                                 </h2>
                             </div>
@@ -330,6 +335,7 @@
                             <div class="popup_about">
                                 <h3>ABOUT</h3>
                                 <p><span>작업기간</span>약 3일</p>
+                                <p><span>작업인원</span>1명</p>
                                 <p><span>참여도</span>100%</p>
                             </div>
                         </div>
@@ -340,10 +346,10 @@
                         <div class="style_box">
                             <div class="style_color">
                                 <h3>Color</h3>
-                                <div class="color1">
+                                <div class="color3">
                                     <p>#000000</p>
                                 </div>
-                                <div class="color2">
+                                <div class="color4">
                                     <p>#FFFFFF</p>
                                 </div>
                             </div>
@@ -351,11 +357,11 @@
                         <div class="style_box">
                             <div class="style_font">
                                 <h3>Font</h3>
-                                <div class="font1">
+                                <div class="font2 font-left">
                                     <p class="regular">NanumGothic Regular</p>
                                     <p><b>NanumGothic Bold</b></p>
                                 </div>
-                                <div class="font1">
+                                <div class="font2 font-right">
                                     <p class="regular">NanumMyeongjo Regular</p>
                                     <p><b>NanumMyeongjo Bold</b></p>
                                 </div>
@@ -365,10 +371,11 @@
                     <div class="preview">
                         <h2>Mobile Preview</h2>
                         <div class="main_view">
-
+                            <a href="https://jiopwls.github.io/invitation_preview/" target=‘_blank><img
+                                    src="./images/phone.png" alt="모바일 청첩장" width="820" height="620"></a>
                         </div>
                     </div>
-                    <div class="exit1">닫기</div>
+                    <div class="exit2">닫기</div>
                 </div>
             </div>
         </div>
@@ -386,20 +393,20 @@
                         </a>
                     </div>
                     <div>
+                        <a href="mailto:jiopwls@naver.com"><img src="images/icon_e-mail1.png" alt="이메일">
+                            <p>jiopwls@naver.com</p>
+                        </a>
+                    </div>
+                    <div>
                         <a href="http://qr.kakao.com/talk/HVXPkNC0tC1AfEscTtYjOw4BVDY-"><img
                                 src="images/icon_kakao1.png" alt="카카오톡">
-                            <p>@finapil</p>
+                            <p>finapil</p>
                         </a>
                     </div>
                     <div>
                         <a href="http://www.instagram.com/_t1ue" target=‘_blank’><img src="images/icon_insta1.png"
                                 alt="인스타그램">
-                            <p>@_t1ue</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="mailto:jiopwls@naver.com"><img src="images/icon_e-mail1.png" alt="이메일">
-                            <p>jiopwls@naver.com</p>
+                            <p>_t1ue</p>
                         </a>
                     </div>
                 </div>
@@ -426,7 +433,7 @@
             </div>
             <div id="footer">
                 <h1>
-                    <a href="index.html">
+                    <a href="#home">
                         <img src="./images/sign.png" alt="logo">
                     </a>
                 </h1>
@@ -443,6 +450,6 @@
 
         </footer>
     </div>
+    <script> AOS.init(); </script>
 </body>
-
 </html>

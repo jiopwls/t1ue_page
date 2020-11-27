@@ -1,18 +1,60 @@
 // 2단계 메뉴 (전체 슬라이드)
 $(function () {
-  $('.depth1 > li').hover(
-    function () {
-
-      $('.bg').stop().slideDown(200);
-      $('.depth2').stop().slideDown(200);
-    },
-    function () {
-      $('.bg').stop().slideUp(200);
-      $('.depth2').stop().slideUp(200);
-    }
-  );
+  $('.depth1 > a').click(function(){
+    $(this).addClass('active');
+    $('.depth1 > a').not(this).removeClass('active')
+  })
 });
-     
+$(function(){
+  var header1 = $('.depth1 > a').eq(0);
+  var header2 = $('.depth1 > a').eq(1);  
+  var header3 = $('.depth1 > a').eq(2); 
+  var header4 = $('.depth1 > a').eq(3); 
+  var page1 = $('#home');
+  var page2 = $('#sub1_1');
+  var page3 = $('#sub1_2');
+  var page4 = $('#sub1_3');
+  var pageOffsetTop1 = page1.offset().top; //변할 부분의 top값 구하기
+  var pageOffsetTop2 = page2.offset().top; 
+  var pageOffsetTop3 = page3.offset().top; 
+  var pageOffsetTop4 = page4.offset().top; 
+  $(window).resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+    pageOffsetTop1 = page1.offset().top;
+    pageOffsetTop2 = page2.offset().top;
+    pageOffsetTop3 = page3.offset().top;
+    pageOffsetTop4 = page4.offset().top;
+  });
+  
+  $(window).on('scroll', function(){
+    var s = $(window).scrollTop();  
+      console.log(s);
+    if($(window).scrollTop() >= 0) { // 스크롤이 page보다 밑에 내려가면
+      header1.addClass('active');
+      header2.removeClass('active')
+      header3.removeClass('active')
+      header4.removeClass('active')
+    }
+    if($(window).scrollTop() >= 200) {
+      header2.addClass('active'); 
+      header1.removeClass('active')
+      header3.removeClass('active')
+      header4.removeClass('active')
+    }
+    if($(window).scrollTop() >1000) {
+      header3.addClass('active');
+      header2.removeClass('active')
+      header1.removeClass('active')
+      header4.removeClass('active')
+    }
+    if($(window).scrollTop() > 2100) {
+      header4.addClass('active');
+      header3.removeClass('active')
+      header2.removeClass('active')
+      header1.removeClass('active')
+    }
+  });
+});
+
 String.prototype.toKorChars = function() {
   var cCho = [ 'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ' ], 
   cJung = [ 'ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ' ], 
@@ -213,15 +255,15 @@ function color1(i, classname,colorname){
 }
 $(document).ready(function(){
   $("#contents1").click(function(){
-      $(".popup").fadeIn()
+      $(".popup1").fadeIn()
   });
   $("#contents2").click(function(){
-    $(".popup1").fadeIn()
+    $(".popup2").fadeIn()
 });
-  $(".exit").click(function(){
-      $(".popup").fadeOut();
-  });
   $(".exit1").click(function(){
-    $(".popup1").fadeOut();
-});
+      $(".popup1").fadeOut();
+  });
+  $(".exit2").click(function(){
+    $(".popup2").fadeOut();
+  });
 });
