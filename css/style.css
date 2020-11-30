@@ -465,13 +465,13 @@ span.center{
   width: 100%;
   height: 100%;
   padding: 80px 20px 20px 20px;
-  margin-top: 50px;
+  margin-top: 40px;
   background: rgba(0, 0, 0, 0.85);
   z-index: 10;
 }
 
 .popmenu {
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
   position: absolute;
   margin: 0 auto;
   left: 50%;
@@ -771,11 +771,7 @@ font-size: 30px;
   position: absolute;
   transition: all 0.3s;
 }
-.quick:hover a span{
-  /* content: ' >'; */
-  transform: translateX(5px);
-  /* opacity: 1; */
-}
+.quick:hover a span{transform: translateX(5px);}
 .now_site {
   font-size: 14px!important;
   top: 70px; left: 140px;
