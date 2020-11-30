@@ -129,11 +129,7 @@ a {
   height: auto;
   display: block;
 }
-.hm {
-  margin: 0 auto;
-  height: 100vh;
-  /* outline: 1px solid green; */
-}
+
 .text-center {
   position: absolute;
   width: 700px;
@@ -153,7 +149,7 @@ a {
   /* outline: 1px solid red; */
   margin-top: 100px;
   margin-left: 35px;
-  width: 630px!important;
+  width: 630px;
   /* margin: 0 auto; */
 }
 /* 다른 타이핑 효과 */
@@ -1102,6 +1098,46 @@ footer{
 
 }
 /* 태블릿 이상에서 모바일로 넘어가는 과정에서 gbn 크기를 그거에 맞춰 줄인다. */
+@media screen and (max-width:1540px) {
+  body{overflow-x: hidden;}
+  .typing-txt {
+    position: absolute;
+    /* outline: 1px solid red; */
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 630px;
+    /* margin: 0 auto; */
+  }
+  
+/*about me*/
+  #sub1_1 {
+    width: 1400px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    position: relative;
+    margin-top: 420px;
+  }
+  .profile {
+    float: left;
+    margin-bottom: -10px;
+  }
+  .skill {margin-top: 70px;}
+  .skill .skill_box{
+    padding-top: 30px;
+    width: 630px;
+  }
+  .pie-chart{width: 90px; height: 90px;}
+  span.center{
+    width: 70px; height: 70px;
+  }
+  .myPic img{
+    width: 30%;
+    margin-left: 120px;
+  }
+  .pf_box3 {margin-top: 100px;}
+  #sub1_3 {height: 655px;}
+  #sub1_3 .text_box{margin-bottom: 100px;}
+}
 @media screen and (max-width:960px) {
 }
 @media screen and (max-width:909px) {

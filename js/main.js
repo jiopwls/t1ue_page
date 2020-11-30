@@ -28,29 +28,30 @@ $(function(){
   $(window).on('scroll', function(){
     var s = $(window).scrollTop();  
       console.log(s);
-    if($(window).scrollTop() >= 0) { // 스크롤이 page보다 밑에 내려가면
+
+    if($(window).scrollTop() <= 390) { // 스크롤이 page보다 밑에 내려가면
       header1.addClass('active');
-      header2.removeClass('active')
-      header3.removeClass('active')
-      header4.removeClass('active')
+      header2.removeClass('active');
+      header3.removeClass('active');
+      header4.removeClass('active');
     }
-    if($(window).scrollTop() >= 200) {
+    if($(window).scrollTop() > 400) {
       header2.addClass('active'); 
-      header1.removeClass('active')
-      header3.removeClass('active')
-      header4.removeClass('active')
+      header1.removeClass('active');
+      header3.removeClass('active');
+      header4.removeClass('active');
     }
-    if($(window).scrollTop() >1000) {
+    if($(window).scrollTop() > 1600) {
       header3.addClass('active');
-      header2.removeClass('active')
-      header1.removeClass('active')
-      header4.removeClass('active')
+      header2.removeClass('active');
+      header1.removeClass('active');
+      header4.removeClass('active');
     }
     if($(window).scrollTop() > 2100) {
       header4.addClass('active');
-      header3.removeClass('active')
-      header2.removeClass('active')
-      header1.removeClass('active')
+      header3.removeClass('active');
+      header2.removeClass('active');
+      header1.removeClass('active');
     }
   });
 });
