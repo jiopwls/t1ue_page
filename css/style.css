@@ -459,7 +459,7 @@ span.center{
 .popup1,
 .popup2 {
   display: none;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   position: fixed;
   left: 0; top: 0;
   width: 100%;
