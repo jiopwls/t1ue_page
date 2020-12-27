@@ -24,11 +24,10 @@ a {
   /* margin-top: -100px; */
 }
 #main_header {
-  min-width: 1400px;
+  width: 1400px;
   width: 100%; height: 100px;
   position: relative;
   margin: 0 auto;
-  /* outline: 1px solid red; */
   /* background-image: url(../images/canvas1.png); */
 }
 .header_box {
@@ -44,19 +43,22 @@ a {
   transform: translateY(-50%);
 }
 #gnb {
-  /* outline: 1px solid red; */
   font-size: 20px;
   position: absolute;
   top: 50px; left: 50%;
   transform: translate(-50%, -50%);
-  box-sizing: border-box;
   z-index: 9999;
+  width: 1400px;
 }
 #gnb .depth1 {
-  box-sizing: border-box;
-  overflow: hidden;
-  /* outline: 1px solid red; */
+  /*box-sizing: border-box;*/
+  /*overflow: hidden;*/
+  /*outline: 1px solid red;*/
   margin: 0 auto;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
   
 }
 #gnb .depth1 > a{
@@ -121,6 +123,7 @@ a {
   height: auto;
   height: 300px;
 }
+#home1{display: none;}
 #home > img{
   position: absolute;
   max-width: 1920px;
@@ -374,6 +377,10 @@ span.center{
   /* background-position: center; */
   color: rgb(14, 14, 14);
 }
+.pf_box_last:hover img{
+  -webkit-filter: grayscale(0%) blur(0);
+	filter: grayscale(0%) blur(0);
+}
 .pf_box2:hover p {
   top: 503px;
 }
@@ -408,24 +415,24 @@ span.center{
   width: 130px;
 }
 .pf_box2:hover p{color: rgb(255, 255, 255);}
-.pf_box3 {
+.pf_box_last {
   /* position: absolute; */
-  width: 350px; height: 350px;
-  margin-top: 200px;
+  width: 390px; height: 350px;
+  margin-top: 150px;
   margin-left: 500px;
   font-size: 35px;
   height: 100px;
   /* outline: 1px solid black; */
 }
-.pf_box3 img{
+.pf_box_last img{
   position: absolute;
   /* top: 80px; */
   left: 490px;
   width: 400px;
-  margin-top: -29px;
+  margin-top: 70px;
   /* outline: 1px solid blue; */
 }
-.pf_box3 span{
+.pf_box_last span{
   top: 1050px;
   /* outline: 1px solid black; */
   width: 390px;
@@ -1084,6 +1091,10 @@ footer{
   /* outline: 1px solid blue; */
 }
 @media screen and (max-width:490px) {
+  *{
+  margin: 0 auto;
+  padding: 0;
+}
   #header-fix{
     width: 100vw;
     position: fixed;
@@ -1095,7 +1106,7 @@ footer{
     /* margin-top: -100px; */
   }
   #main_header {
-    width: 100%;
+    width: 100%!important;
     /* position: relative; */
     /* margin: 0 auto; */
     /* outline: 1px solid red; */
@@ -1103,6 +1114,7 @@ footer{
   }
   /* .header_box{width: 100vw;} */
   #gnb{display: none;}
+  .header_box{width: 100vw;}
   .header_box h1{
     /* position: absolute; */
     /* text-align: center; */
@@ -1122,21 +1134,29 @@ footer{
     transform: translate(-50%,-50%);
   }
   #home{
-    /* max-width: 1920px; */
-    /* width: 1900px; */
-    /* margin-top: 100px; */
-    /* width: 1900px; */
-    /* height: 800px; */
     padding-top: 15vh;
     width: 100%;
     height: 70vh;
-    /*outline: 1px solid green;*/
     position: relative;
-    /* background: orange; */
-    /*overflow: hidden;*/
-    /* background-size: cover; */
-    /* height: auto; */
-    /* height: 300px; */
+    display: none;
+  }
+  #home1{
+    display: block;
+    padding-top: 15vh;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  #home1 > img{
+    position: absolute;
+    max-width: 480px;
+    width: 50vw;
+    /*height: 100vh;*/
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .text-center{
     /*outline: 1px solid blue;*/
@@ -1159,7 +1179,86 @@ footer{
     line-height: 10px;
     height: 10px;
   }
+  .section{width: 80vw!important;}
+  /*about me*/
+  #sub1_1 {
+  width: 80vw!important;
+  margin: 0 auto;
+  /*outline: 1px solid red;*/
+  position: relative;
+  top: -300px;
+  overflow: hidden;
+  }
+  .text_box{
+  width: 100%;
+  margin: 0 auto;
+  }
+  #sub1_1 .text_box h2{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  #sub1_1 .text_box img{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    width: 250px;
+  }
+  .products_box{
+    width: 100%!important;
+    clear: both;
+    left: 0;
+    margin: 0 auto;
+    font-size: 16px!important;
+  }
+  .products_box h3{
+    width: 100%;
+    clear: both;
+  }
+  .myPic img{
+  position: absolute;
+  width: 50%!important;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0!important;
+  margin-right: 0!important;
+  margin-top: -30px;
+  
+  }
+  .profile {
+  clear: both;
+  margin-bottom: -10px;
+  margin-top: 230px;
+  }
+  .history{
+    clear: both;
+    width: 100%;
+  }
+  .history p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .skill {
+    margin-top: 70px;
+    clear: both;
+  }
+  .skill .skill_box{
+  padding-top: 30px;
+  width: 630px;
+  }
+  span.center{
+  width: 70px; height: 70px;
+  }
+  .pf_box3 {margin-top: 100px;}
+  #sub1_2 .text_box img{
+    left: 30%;
+    margin-top: 5px;
+    width: 250px;
+  }
+  #sub1_3 {height: 655px;}
+  #sub1_3 .text_box{margin-bottom: 100px;}
 }
+
 
 
 @media screen and (max-width:530px) {
@@ -1188,13 +1287,12 @@ footer{
   body{overflow-x: hidden;}
   .typing-txt {
     position: absolute;
-    /* outline: 1px solid red; */
-    margin-top: 40px;
+    margin-top: 58px;
     margin-left: 85px;
-    width: 630px;
+    width: 410px;
     /* margin: 0 auto; */
   }
-  
+  #home {padding-top: 10px;}
 /*about me*/
   #sub1_1 {
     width: 1400px;
@@ -1224,7 +1322,44 @@ footer{
   #sub1_3 {height: 655px;}
   #sub1_3 .text_box{margin-bottom: 100px;}
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:1520px) {
+  .typing-txt{
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width:1476px) {
+  .typing-txt{
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+}
+@media screen and (max-width:1448px) {
+  .typing-txt{
+    margin-left: 100px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width:1422px) {
+  .typing-txt{
+    margin-top: 25px;
+    margin-left: 110px;
+  }
+}
+@media screen and (max-width:1388px) {
+  #home{padding-top: 15px;}
+}
+@media screen and (max-width:1378px) {
+  .typing-txt{
+    margin-top: 20px;
+    margin-left: 120px;
+  }
+  #home{padding-top: 20px;}
+}
+@media screen and (max-width:13px) {
+  .typing-txt{
+    margin-top: 40px;
+    margin-left: 90px;
+  }
 }
 @media screen and (max-width:909px) {
 }
