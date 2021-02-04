@@ -45,21 +45,21 @@ a {
 #gnb {
   font-size: 20px;
   position: absolute;
-  top: 50px; left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 9999;
   width: 1400px;
 }
 #gnb .depth1 {
   /*box-sizing: border-box;*/
   /*overflow: hidden;*/
-  /*outline: 1px solid red;*/
+  /* outline: 1px solid blue; */
   margin: 0 auto;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translateY(-50%);
   position: absolute;
   text-align: center;
-  
+  right: 0;
 }
 #gnb .depth1 > a{
   /* outline: 1px solid blue; */
@@ -153,6 +153,8 @@ a {
   margin-top: 100px;
   margin-left: 35px;
   width: 630px;
+  left: 50%;
+  transform: translateX(-50%);
   /* margin: 0 auto; */
 }
 /* 다른 타이핑 효과 */
@@ -244,7 +246,7 @@ p.cursor1 {animation: cursor2 0.4s infinite;}
 }
 .history h3{
   float: left;
-  margin-right: 77px;
+  margin-right: 70px;
   height: 50px;
 }
 .history p{
@@ -283,7 +285,7 @@ p.cursor1 {animation: cursor2 0.4s infinite;}
   float: left;
   /* outline: 1px solid red; */
   margin-right: 5px;
-  margin-top: -10px;
+  margin-top: 45px;
 }
 .skill_box div:last-child{margin-right: 0;}
 
@@ -1164,12 +1166,12 @@ footer{
     height: 200px;
     padding: 0;
     margin: 0 auto;
-    margin-left: -10px;
   }
   .typing-txt{
     position: absolute;
     margin: 0 auto;
     width: 150px!important;
+    margin-left: -30px;
     /*outline: 1px solid red;*/
   }
   p.result1,
@@ -1268,7 +1270,7 @@ footer{
     /* background-size: 150%; */
   }
   .typing-txt{
-    margin-left: 270px;
+    left: 50%;
     margin-top: -70px;
   }
   p.result1,
@@ -1287,8 +1289,8 @@ footer{
   body{overflow-x: hidden;}
   .typing-txt {
     position: absolute;
-    margin-top: 58px;
-    margin-left: 85px;
+    margin-top: 40px;
+    margin-left: -25px;
     width: 410px;
     /* margin: 0 auto; */
   }
@@ -1329,8 +1331,8 @@ footer{
 }
 @media screen and (max-width:1476px) {
   .typing-txt{
-    margin-top: 40px;
-    margin-left: 90px;
+    margin-top: 35px;
+    margin-left: -35px;
   }
 }
 @media screen and (max-width:1448px) {
@@ -1342,7 +1344,7 @@ footer{
 @media screen and (max-width:1422px) {
   .typing-txt{
     margin-top: 25px;
-    margin-left: 110px;
+    margin-left: -30px;
   }
 }
 @media screen and (max-width:1388px) {
@@ -1351,7 +1353,7 @@ footer{
 @media screen and (max-width:1378px) {
   .typing-txt{
     margin-top: 20px;
-    margin-left: 120px;
+    margin-left: -30px;
   }
   #home{padding-top: 20px;}
 }
